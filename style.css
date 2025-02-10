@@ -1,0 +1,137 @@
+*{
+    font-family: 'Poppins', 'serif';
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    height: 100vh;
+}
+
+.main-container {
+    display: flex;
+    gap: 30px;
+    width: 80%;
+    max-width: 1200px;
+    padding: 20px;
+}
+
+.header {
+    font-size: 32px;
+    font-weight: 600;
+    text-align: left;
+}
+
+.product-container{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 15px;
+    flex: 2;
+}
+
+.cart-container {
+    display: flex;
+    flex-direction: column;
+    width: 500px;
+    padding: 15px;
+    background-color: #fff;
+    border-radius: 10px;
+    border: 1px solid #ddd;
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+.cart-container h2 {
+    text-align: center;
+}
+
+#cart-items {
+    flex-grow: 1;
+    overflow-y: auto;
+    list-style-type: none;
+    padding: 0;
+}
+
+.price-container{
+    border-top: 1px #ccc solid;
+    padding-top: 10px ;
+}
+
+.price-container p{
+    font-size: 34px;
+    font-weight: bold;
+}
+.cart-container ul li {
+    font-size: 24px;
+    margin: 10px 0;
+    display: flex;
+    justify-content: space-between;
+}
+
+.price-container{
+    position: sticky;
+    
+}
+
+.product-card{
+
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    text-align: center;
+    padding: 15px;
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.1);
+    background-color: #fff;
+}
+
+.product-image{
+    width: 100%;
+    object-fit: cover;
+    height: 150px;
+    border-radius: 10px;
+}
+
+.product-price{
+    font-size: 24px;
+    margin: 5px 0;
+    text-align: left;
+    font-weight: bold;
+}
+
+.product-name{
+    font-size: 18px;
+    font-weight: 600;
+    text-align: left;
+}
+
+.add-to-cart{
+    background-color: #ffb300;
+    color: white;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+    width: 100%;
+    border-radius: 5px;
+    margin-top: 10px;
+}
+
+.add-to-cart:hover {
+    background-color: #da9501;
+  }
+
+  .remove-btn {
+    background-color: red;
+    color: white;
+    border: none;
+    padding: 5px 10px;
+    cursor: pointer;
+    border-radius: 5px;
+    margin-left: 10px;
+}
+
+.remove-btn:hover {
+    background-color: darkred;
+}
